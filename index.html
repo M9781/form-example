@@ -23,51 +23,47 @@
           <ul>
             <li>
               <label for="username">Your Name</label>
-              <input
-                type="text"
-                name="user-name"
-                id="username"
-                required
-                placeholder="Max Schwarz"
-              />
+              <input type="text" name="user-name" id="username" required />
             </li>
             <li>
-              <label for="useremail">Your E-mail Address</label>
+              <label for="email">Your E-mail Address</label>
               <input
                 type="email"
-                name="user-email"
-                id="useremail"
+                name="email"
+                id="email"
                 required
                 placeholder="e.g. person@address.com"
               />
             </li>
             <li>
-              <label for="userphone">Your Phone Number</label>
+              <label for="phone">Your Phone Number</label>
               <input
-                type="number"
+                type="tel"
                 step="1"
-                name="user-phone"
-                id="userphone"
+                name="phone"
+                id="phone"
                 maxlength="9"
                 minlength="9"
                 required
               />
             </li>
             <li>
-              <label for="usermsg">Your Message</label>
+              <label for="msg">Your Message</label>
               <textarea
-                name="user-msg"
-                id="usermsg"
+                name="msg"
+                id="msg"
                 cols="30"
                 rows="6"
+                minlength="10"
+                maxlength="200"
               ></textarea>
             </li>
             <li>
-              <label for="fav-color">How did you find us?</label>
-              <select name="fav-color" id="fav-color">
-                <option value="blue">Web Search</option>
-                <option value="black">Word of Mouth</option>
-                <option value="red">Other</option>
+              <label for="channel">How did you find us?</label>
+              <select name="channel" id="channel">
+                <option value="search">Web Search</option>
+                <option value="word-of-mouth">Word of Mouth</option>
+                <option value="other">Other</option>
               </select>
             </li>
           </ul>
@@ -78,34 +74,32 @@
             <li class="form-control-wrapper">
               <input
                 type="radio"
-                name="contact"
-                id="contact-phone"
+                name="reply"
+                id="reply-phone"
                 value="phone"
                 required
               />
-              <label for="contact-phone">Call me</label>
+              <label for="reply-phone">Call me</label>
             </li>
             <li class="form-control-wrapper">
               <input
                 type="radio"
-                name="contact"
-                id="contact-email"
+                name="reply"
+                id="reply-email"
                 value="email"
                 required
               />
-              <label for="contact-email">Send me an email</label>
+              <label for="reply-email">Send me an email</label>
             </li>
             <li class="form-control-wrapper">
               <input
                 type="radio"
-                name="contact"
-                id="contact-none"
+                name="reply"
+                id="reply-none"
                 value="none"
                 required
               />
-              <label class="radio-label" for="contact-none">
-                Don't reply
-              </label>
+              <label class="radio-label" for="reply-none"> Don't reply </label>
             </li>
           </ul>
         </section>
